@@ -4,17 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
     <title>Currency Converter</title>
   </head>
   <body>
-    <head></head>
+    <header></header>
     <main>
-      <section>
-        <div class="container"></div>
-      </section>
+      <div class="wrapper">
+        <h1 class="title">Currency Converter</h1>
+        <div class="form-wrapper">
+          <form class="form">
+            <div class="flags-wrapper">
+              <div class="flags">
+                <p>From EUR</p>
+                <i class="fa-solid fa-euro-sign"></i>
+              </div>
+              <div class="flags">
+                <p>To UAH</p>
+                <i class="fas fa-hryvnia"></i>
+              </div>
+            </div>
+            <div class="ammount block">
+              <p class="input-title">Enter Ammount</p>
+              <input class="input" type="text" name="" id="" />
+            </div>
+            <div class="exchange-rate block">
+              <p class="input-title">Exchange rate</p>
+              <input
+                class="input"
+                type="text"
+                name=""
+                id=""
+                placeholder="40.2"
+              />
+            </div>
+            <p class="result">You will get: <span id=""></span>₴</p>
+            <button class="form-button">Calculate</button>
+          </form>
+
+          <div class="line"></div>
+
+          <form class="form">
+            <div class="flags-wrapper">
+              <div class="flags">
+                <p>From UAH</p>
+                <i class="fas fa-hryvnia"></i>
+              </div>
+              <div class="flags">
+                <p>To EUR</p>
+                <i class="fa-solid fa-euro-sign"></i>
+              </div>
+            </div>
+            <div class="ammount block">
+              <p class="input-title">Enter Ammount</p>
+              <input class="input" type="text" name="" id="" />
+            </div>
+            <div class="exchange-rate block">
+              <p class="input-title">Exchange rate</p>
+              <input
+                class="input"
+                type="text"
+                name=""
+                id=""
+                placeholder="40.2"
+              />
+            </div>
+            <p class="result">You will get: <span id=""></span>€</p>
+            <button class="form-button">Calculate</button>
+          </form>
+        </div>
+      </div>
     </main>
   </body>
+  <script
+    src="https://kit.fontawesome.com/b5998fc6be.js"
+    crossorigin="anonymous"
+  ></script>
   <script src="./index.js"></script>
 </html>
