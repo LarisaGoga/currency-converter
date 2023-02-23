@@ -1,15 +1,17 @@
+let totalUah = document.getElementById("totalUah");
+let euroAmount = document.getElementById("euroAmount");
+let exchangeRateEuro = document.getElementById("exchangeRateEuro");
+
+let totalEuro = document.getElementById("totalEuro");
+let uahAmount = document.getElementById("uahAmount");
+let exchangeRateUah = document.getElementById("exchangeRateUah");
+
 function calculateUah() {
-  let totalUah = document.getElementById("totalUah");
-  let euroAmount = document.getElementById("euroAmount").value;
-  let exchangeRateEuro = document.getElementById("exchangeRateEuro").value;
-  let total = euroAmount * exchangeRateEuro;
+  let total = euroAmount.value * exchangeRateEuro.value;
   totalUah.innerHTML = total;
 }
 
 function calculateEur() {
-  let totalEuro = document.getElementById("totalEuro");
-  let uahAmount = document.getElementById("uahAmount").value;
-  let exchangeRateUah = document.getElementById("exchangeRateUah").value;
-  let total = uahAmount / exchangeRateUah;
-  totalEuro.innerHTML = total.toFixed();
+  let total = uahAmount.value / exchangeRateUah.value;
+  totalEuro.innerHTML = total.toFixed(2);
 }
