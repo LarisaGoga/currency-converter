@@ -33,7 +33,7 @@
             </div>
             <div class="ammount block">
               <p class="input-title">Enter Ammount</p>
-              <input class="input" type="text" name="" id="" />
+              <input class="input" type="text" name="" id="euroAmount" />
             </div>
             <div class="exchange-rate block">
               <p class="input-title">Exchange rate</p>
@@ -41,12 +41,20 @@
                 class="input"
                 type="text"
                 name=""
-                id=""
-                placeholder="40.2"
+                id="exchangeRateEuro"
+                value="41.5"
+                placeholder="41.5"
               />
             </div>
-            <p class="result">You will get: <span id=""></span>₴</p>
-            <button class="form-button">Calculate</button>
+            <p class="result">You will get: <span id="totalUah"></span>₴</p>
+            <button
+              type="button"
+              class="form-button"
+              onclick="calculateUah()"
+              id="calculate-uah"
+            >
+              Calculate
+            </button>
           </form>
 
           <div class="line"></div>
@@ -64,7 +72,7 @@
             </div>
             <div class="ammount block">
               <p class="input-title">Enter Ammount</p>
-              <input class="input" type="text" name="" id="" />
+              <input class="input" type="text" name="" id="uahAmount" />
             </div>
             <div class="exchange-rate block">
               <p class="input-title">Exchange rate</p>
@@ -72,12 +80,20 @@
                 class="input"
                 type="text"
                 name=""
-                id=""
-                placeholder="40.2"
+                id="exchangeRateUah"
+                value="42"
+                placeholder="42"
               />
             </div>
-            <p class="result">You will get: <span id=""></span>€</p>
-            <button class="form-button">Calculate</button>
+            <p class="result">You will get: <span id="totalEuro"></span>€</p>
+            <button
+              type="button"
+              class="form-button"
+              onclick="calculateEur()"
+              id="calculate-eur"
+            >
+              Calculate
+            </button>
           </form>
         </div>
       </div>
