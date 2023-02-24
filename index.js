@@ -6,20 +6,23 @@ const totalEuro = document.getElementById("totalEuro");
 const uahAmount = document.getElementById("uahAmount");
 const exchangeRateUah = document.getElementById("exchangeRateUah");
 
-function calculateUah(amount, exchangeRate) {
+function calculateEurToUah(amount, exchangeRate) {
   return amount * exchangeRate;
 }
 
 function renderTotalUah() {
-  totalUah.innerHTML = calculateUah(euroAmount.value, exchangeRateEuro.value);
+  totalUah.innerHTML = calculateEurToUah(
+    euroAmount.value,
+    exchangeRateEuro.value
+  );
 }
 
-function calculateEur(amount, exchangeRate) {
+function calculateUahToEur(amount, exchangeRate) {
   return amount / exchangeRate;
 }
 
 function renderTotalEuro() {
-  totalEuro.innerHTML = calculateEur(
+  totalEuro.innerHTML = calculateUahToEur(
     uahAmount.value,
     exchangeRateUah.value
   ).toFixed(2);
